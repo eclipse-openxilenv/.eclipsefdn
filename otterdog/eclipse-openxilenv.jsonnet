@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-openxilenv') {
+orgs.newOrg('automotive.openxilenv', 'eclipse-openxilenv') {
   settings+: {
     web_commit_signoff_required: false,
     workflows+: {
