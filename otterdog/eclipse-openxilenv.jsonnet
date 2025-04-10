@@ -2,6 +2,8 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('automotive.openxilenv', 'eclipse-openxilenv') {
   settings+: {
+    discussion_source_repository: "eclipse-openxilenv/openxilenv",
+    has_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
@@ -14,6 +16,7 @@ orgs.newOrg('automotive.openxilenv', 'eclipse-openxilenv') {
       delete_branch_on_merge: false,
       description: "openxilenv",
       web_commit_signoff_required: false,
+      has_discussions: true,
     },
     orgs.newRepo('openxilenv-website') {
       allow_merge_commit: true,
